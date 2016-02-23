@@ -1,0 +1,5 @@
+<h1>Chat room <%= @room.name %></h1>
+
+<% @messages.each do |message| %>
+  <p><%= "#{message.author}: #{message.content}"%></p>
+<% end %>
